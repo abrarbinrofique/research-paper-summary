@@ -1,0 +1,17 @@
+{
+    "name": null,
+    "input_variables": [
+        "dsc",
+        "paper_input",
+        "select_type"
+    ],
+    "optional_variables": [],
+    "output_parser": null,
+    "partial_variables": {},
+    "metadata": null,
+    "tags": null,
+    "template": "\n        \n        please summarize the research paper titled \"{paper_input}\" with the  following specificatin:\n        \n        Explanation style:\"{select_type}\" \n        Explanaion length:\"{dsc}\"\n        \n        1.mathmetical detail: \n        -include relavent mathmetical equaion if present in paper\n        -Explain he mahmeical concepts using simple,intutive code snippets where applicable\n        \n        2.Analogies:\n         -Use relattable analogy to explain complex ideas.\n         If sufficient information is not available in the paper,respond with:Information is not available, instead of guessing.\n         Ensure he summary aligned wih syle,length,accurate\n        ",
+    "template_format": "f-string",
+    "validate_template": true,
+    "_type": "prompt"
+}
