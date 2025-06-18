@@ -40,7 +40,7 @@ A Streamlit-powered web application that provides intelligent summaries of popul
   ```bash
   git clone https://github.com/yourusername/research-paper-summarizer.git
   cd research-paper-summarizer
-🎯 How to Use
+*🎯 How to Use*
 
 Select a Research Paper from the dropdown menu
 Choose Explanation Style based on your background:
@@ -82,6 +82,7 @@ Style: Beginner-Friendly
 Length: Medium
 
 Summary:
+
 The "Attention is All You Need" paper introduces the Transformer architecture, 
 revolutionizing how machines process language. Think of attention like a spotlight 
 in a dark room - instead of looking at everything equally, the model learns to 
@@ -91,21 +92,21 @@ Mathematical Details:
 The core attention mechanism uses the formula: Attention(Q,K,V) = softmax(QK^T/√d_k)V
 This calculates how much focus to put on each word when processing another word...
 🔧 Customization
-Adding New Papers
+*Adding New Papers*
 Modify the paper_input selectbox in prompt.py:
 pythonpaper_input = st.selectbox("select research paper Name", [
     "Attention is All you need",
     "Your New Paper Title",
     # Add more papers here
-])
-Modifying Explanation Styles
+
+*Modifying Explanation Styles*
 Update the select_type options:
 pythonselect_type = st.selectbox("Select Explanation you want:", [
     'Beginer-Friendly',
     'Your Custom Style',
     # Add more styles
-])
-Customizing Prompts
+
+*Customizing Prompts*
 Edit templates.py to modify the prompt template, then regenerate:
 bashpython templates.py
 📋 Requirements
@@ -121,7 +122,7 @@ API Costs: This app uses OpenAI's GPT-4 Turbo, which incurs costs per request
 Rate Limits: Be mindful of OpenAI's rate limiting policies
 Environment Security: Never commit your .env file to version control
 
-🤝 Contributing
+*🤝 Contributing*
 
 Fork the repository
 Create a feature branch (git checkout -b feature/amazing-feature)
@@ -129,22 +130,10 @@ Commit your changes (git commit -m 'Add amazing feature')
 Push to the branch (git push origin feature/amazing-feature)
 Open a Pull Request
 
-📄 License
-This project is licensed under the MIT License - see the LICENSE file for details.
-🙏 Acknowledgments
 
-OpenAI for providing GPT-4 Turbo
-LangChain team for the excellent framework
-Streamlit for making web apps simple
-Research paper authors for their groundbreaking work
 
-📞 Support
-If you encounter any issues or have questions:
-
-🐛 Report Bugs
-💡 Request Features
-📧 Email: your.email@example.com
+📧 Email:researchabrarrofique@gmailcom
 
 
 ⭐ Star this repository if you found it helpful!
-Made with ❤️ by Your Name
+Made with ❤️ by Abrar
