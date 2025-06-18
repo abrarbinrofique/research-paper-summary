@@ -38,8 +38,10 @@ A Streamlit-powered web application that provides intelligent summaries of popul
 
 1. **Clone the repository**
   ```bash
+
   git clone https://github.com/yourusername/research-paper-summarizer.git
   cd research-paper-summarizer
+```
 *🎯 How to Use*
 
 Select a Research Paper from the dropdown menu
@@ -77,6 +79,7 @@ Environment Configuration: Secure API key management
 Responsive UI: Clean and intuitive Streamlit interface
 
 📝 Example Output
+```
 Paper: "Attention is All You Need"
 Style: Beginner-Friendly
 Length: Medium
@@ -91,6 +94,7 @@ focus on the most important parts of a sentence when understanding context...
 Mathematical Details:
 The core attention mechanism uses the formula: Attention(Q,K,V) = softmax(QK^T/√d_k)V
 This calculates how much focus to put on each word when processing another word...
+```
 🔧 Customization
 *Adding New Papers*
 Modify the paper_input selectbox in prompt.py:
@@ -106,31 +110,35 @@ pythonselect_type = st.selectbox("Select Explanation you want:", [
     'Your Custom Style',
     # Add more styles
 
-*Customizing Prompts*
+**Customizing Prompts**
 Edit templates.py to modify the prompt template, then regenerate:
 bashpython templates.py
+
 📋 Requirements
-Create a requirements.txt file:
+```Create a requirements.txt file:
 txtstreamlit>=1.28.0
 langchain-openai>=0.1.0
 langchain-core>=0.2.0
 python-dotenv>=1.0.0
 openai>=1.0.0
-🚨 Important Notes
+```
 
+🚨 Important Notes
+```
 API Costs: This app uses OpenAI's GPT-4 Turbo, which incurs costs per request
 Rate Limits: Be mindful of OpenAI's rate limiting policies
 Environment Security: Never commit your .env file to version control
+```
 
 *🤝 Contributing*
-
+```
 Fork the repository
 Create a feature branch (git checkout -b feature/amazing-feature)
 Commit your changes (git commit -m 'Add amazing feature')
 Push to the branch (git push origin feature/amazing-feature)
 Open a Pull Request
 
-
+```
 
 📧 Email:researchabrarrofique@gmailcom
 
